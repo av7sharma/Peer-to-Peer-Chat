@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="sample.connect">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="369.0" prefWidth="544.0">
+         <children>
+            <TextField fx:id="ip" alignment="CENTER" layoutX="215.0" layoutY="143.0" />
+            <TextField fx:id="port" layoutX="215.0" layoutY="195.0" />
+            <Label layoutX="113.0" layoutY="148.0" text="IP Address" />
+            <Label layoutX="120.0" layoutY="200.0" text="Port" />
+            <Button fx:id="connect" layoutX="240.0" layoutY="260.0" mnemonicParsing="false" onAction="#join" text="Connect" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
